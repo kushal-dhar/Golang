@@ -14,8 +14,10 @@ func main() {
 	fmt.Println(a)
 	fmt.Printf("%v\n", b)
 	fmt.Println(c)
-	fmt.Printf("%#v\n", f)
-	fmt.Printf("%T\n", g)
-	fmt.Printf("%v", g)
+
+	s := fmt.Sprint(f, g)
+	fmt.Printf("%v\n", s)
+	s2 := fmt.Sprintf("%s\t%s\n", f, g)
+	fmt.Printf("%s", s2)
 }
 
